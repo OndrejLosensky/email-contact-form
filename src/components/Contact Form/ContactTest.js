@@ -17,9 +17,17 @@ class ContactForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Name:', this.state.name);
-    console.log('Email:', this.state.email);
-    console.log('Message:', this.state.message);
+    console.log('Jméno:', this.state.name);
+    console.log('E-mail:', this.state.email);
+    console.log('Zpráva:', this.state.message);
+
+      // Clear input fields by resetting state
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+        isEmailSent: true, // Set the confirmation message to true
+      });
   };
 
   render() {
