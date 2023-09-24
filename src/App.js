@@ -3,7 +3,7 @@ import ContactForm from "./components/Contact Form/ContactForm";
 
 function App() {
   return (
-    <section>
+    <section className="w-sceen h-full">
         <ContactForm/>
     </section>
     
