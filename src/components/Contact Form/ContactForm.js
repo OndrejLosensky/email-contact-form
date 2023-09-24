@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
     return (
         <div>
-            <h2 className="text-5xl text-slate-700 font-bold text-center mt-8 uppercase"> šablona pro kontaktní formulář</h2>
+            <h2 className="text-5xl text-slate-700 font-bold text-center mt-8 uppercase "> šablona pro kontaktní formulář</h2>
             
             
             <div className="flex items-center justify-center">
