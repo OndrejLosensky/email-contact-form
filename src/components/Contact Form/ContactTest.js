@@ -32,6 +32,9 @@ class ContactForm extends Component {
 
   render() {
     return (
+    <section>
+
+   
         <div>
             <h2 className="text-5xl text-slate-700 font-bold text-center mt-8 uppercase "> šablona pro kontaktní formulář</h2>
 
@@ -93,7 +96,7 @@ class ContactForm extends Component {
         </div>
     
 
-     
+    </section>
     );
   }
 }
