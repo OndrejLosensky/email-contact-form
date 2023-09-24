@@ -7,7 +7,7 @@ const ContactForm = () => {
             
             
             <div className="flex items-center justify-center">
-                <div className="bg-gray-100 p-8 rounded-[30px] shadow-2xl duration-300 w-[80%] h-[550px] mt-8 ">
+                <div className="bg-gray-100 p-8 rounded-[30px] shadow-2xl duration-300 w-[70%] h-[60%] mt-8 ">
                     <h1 className="text-3xl text-blue-500 font-semibold mb-4"> Kontaktní formulář</h1>
                     <form>
                         <div>
