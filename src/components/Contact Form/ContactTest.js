@@ -21,12 +21,11 @@ class ContactForm extends Component {
     console.log('E-mail:', this.state.email);
     console.log('Zpráva:', this.state.message);
 
-      // Clear input fields by resetting state
       this.setState({
         name: '',
         email: '',
         message: '',
-        isEmailSent: true, // Set the confirmation message to true
+        isEmailSent: true, 
       });
   };
 
