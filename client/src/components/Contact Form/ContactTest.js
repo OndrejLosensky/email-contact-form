@@ -14,19 +14,19 @@ export default class ContactForm extends Component {
   // Ukládání vstupů do funkce Handle
   handleName = (e) => {
     this.setState({
-      name:e.target.name
+      name:e.target.value
     })
   }
 
   handleEmail = (e) => {
     this.setState({
-      email:e.target.email
+      email:e.target.value
     })
   }
 
   handleMessage = (e) => {
     this.setState({
-      message:e.target.message
+      message:e.target.value
     })
   }
 
@@ -65,7 +65,8 @@ export default class ContactForm extends Component {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    
+                                    value={this.state.email}
+                                    onChange={this.handleEmail}
                                 />
                             </div>
 
@@ -76,7 +77,8 @@ export default class ContactForm extends Component {
                                     placeholder="Vaše zpráva"
                                     id="message"
                                     name="message"
-                                    
+                                    value={this.state.message}
+                                    onChange={this.handleMessage}
                                 ></textarea>
                             </div>
 
