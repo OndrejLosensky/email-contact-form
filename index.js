@@ -41,7 +41,7 @@ app.post('/api/forma', (req, res) => {
         `
     };
 
-    smtpTransport.sendMai(mailOptions, (error, response) => {
+    smtpTransport.sendMail(mailOptions, (error, response) => {
         if(error)
         {
             res.send(error)

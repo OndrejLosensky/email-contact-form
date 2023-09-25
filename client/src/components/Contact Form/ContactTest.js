@@ -122,10 +122,6 @@ export default class ContactForm extends Component {
                                 ></textarea>
                             </div>
 
-                            <div className={this.state.sent ? 'msg msgAppear' : 'msg'}>
-                              Zprava byla odeslana
-                            </div>
-
                             <div className='text-right mt-2'>
                                 <button 
                                     type="submit" 
