@@ -31,6 +31,44 @@ export default class ContactForm extends Component {
     })
   }
 
+  // odesílání formuláře
+
+  formSubmit = (e) => {
+    e.preventDefault();
+
+    let data = { 
+      name:this.state.name, 
+      email:this.state.email,
+      message:this.state.message
+    }
+   
+    axios.post('/api/forma', data)
+    .then(res=>{
+      this.setState({
+        sent:true,
+      },this.resetForm())
+    }).catch(() => {
+      console.log("zprava nebyla odeslana")
+    })
+
+  }
+
+  // Resetování dat ve formuláři
+
+  resetForm = () => {
+    this.setState({
+      email: '',
+      name: '',
+      message: ''
+    })
+
+    setTimeout(() => {
+      this.setState({
+        sent:false,
+      })
+    }, 3000)
+  }
+
   render() {
     return (
     <section>
