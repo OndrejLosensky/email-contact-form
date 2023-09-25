@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
 
-class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    };
+export default class ContactForm extends Component {
+  
+  state = {
+    email: '',
+    name: '',
+    message: '',
+    sent:false
   }
 
-  handleInputChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Jméno:', this.state.name);
-    console.log('E-mail:', this.state.email);
-    console.log('Zpráva:', this.state.message);
+  // Ukládání vstupů do funkce Handle
+  handleName = (e) => {
+    this.setState({
+      name:e.target.name
+    })
+  }
 
-      this.setState({
-        name: '',
-        email: '',
-        message: '',
-        isEmailSent: true, 
-      });
-  };
+  handleEmail = (e) => {
+    this.setState({
+      email:e.target.email
+    })
+  }
+
+  handleMessage = (e) => {
+    this.setState({
+      message:e.target.message
+    })
+  }
 
   render() {
     return (
@@ -41,7 +41,7 @@ class ContactForm extends Component {
                     <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[70%] h-[80%] mt-2'>
                         <h1 className="text-3xl text-blue-500 font-semibold mb-2"> Kontaktní formulář</h1>
 
-                        <form onSubmit={this.handleSubmit}>
+                        <form >
                             <div>
                                 <label htmlFor="name" className='block text-gray-700 font-medium'> Jméno:</label>
                                 <input
@@ -50,8 +50,7 @@ class ContactForm extends Component {
                                     type="text"
                                     id="name"
                                     name="name"
-                                    value={this.state.name}
-                                    onChange={this.handleInputChange}
+                                    
                                 />
                             </div>
 
@@ -63,8 +62,7 @@ class ContactForm extends Component {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    value={this.state.email}
-                                    onChange={this.handleInputChange}
+                                    
                                 />
                             </div>
 
@@ -75,8 +73,7 @@ class ContactForm extends Component {
                                     placeholder="Vaše zpráva"
                                     id="message"
                                     name="message"
-                                    value={this.state.message}
-                                    onChange={this.handleInputChange}
+                                    
                                 ></textarea>
                             </div>
 
@@ -99,5 +96,3 @@ class ContactForm extends Component {
     );
   }
 }
-
-export default ContactForm;

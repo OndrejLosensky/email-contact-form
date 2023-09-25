@@ -1,0 +1,19 @@
+{
+  "name": "email-contact-form",
+  "version": "1.0.0",
+  "description": "contact-form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "losensky",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^3.0.1"
+  }
+}
