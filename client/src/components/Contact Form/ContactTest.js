@@ -46,9 +46,11 @@ export default class ContactForm extends Component {
     .then(res=>{
       this.setState({
         sent:true,
-      },this.resetForm())
-    }).catch(() => {
-      console.log("zprava nebyla odeslana")
+        
+      },this.resetForm(), console.log('Zpráva úspěšně odeslána!'), alert('Úspěšně odesláno'))
+    } )
+    .catch(() => {
+      console.log("Při odesílání se vyskytl error!!!")
     })
 
   }
@@ -122,9 +124,8 @@ export default class ContactForm extends Component {
                                 ></textarea>
                             </div>
 
-                            <div className={this.state.sent ? 'msg msgAppear':'msg'}>
-                                Message has been sent
-                            </div>
+                              {/* Potřeba vytvořit proměnnou, která zobrazí že se zpráva úspěšně odeslala*/}
+                            
 
                             <div className='text-right mt-2'>
                                 <button 

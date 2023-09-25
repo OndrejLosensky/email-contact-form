@@ -21,21 +21,25 @@ app.post('/api/forma', (req, res) => {
         service: 'Gmail', 
         port: 465,
         auth: {
-            user:'losenskyondrej@gmail.com',
-            pass:'Losicek050517'
+            user:'ondra.losi@gmail.com',
+            pass:'nyyy ldrl rkbe spjm'
         }
     });
 
     let mailOptions = {
         from:data.email,
-        to: 'losenskyondrej@gmail.com',
+        to: 'ondra.losi@gmail.com',
         subject:`Zprava od ${data.name}`,
         html:`
-            <h2> Informace </h2>
+            <h2> Příchozí e-mail z kontaktního formuláře </h2>
 
-            <li> Jmeno: ${data.name}</li>
-            <li> Email: ${data.email} </li>
-            <li> Zprava: ${data.message} </li>
+            <h4> Jméno: </h4>
+            <p> ${data.name}</p>
+            <h4> E-mail: </h4>
+            <p> ${data.email} </p>
+            <h4> Zpráva pro mě:</h4>
+            <p> ${data.message} </p>
+
 
 
         `
@@ -48,7 +52,7 @@ app.post('/api/forma', (req, res) => {
         }
         else
         {
-            res.send('Success')
+            res.send('Úspěšně odesláno')
         }
     })
 
@@ -60,5 +64,5 @@ app.post('/api/forma', (req, res) => {
 const PORT = process.env.PORT||3001;
 
 app.listen(PORT, () => {
-    console.log(`Server se nacita na portu ${PORT}`);
+    console.log(`Server se nacetl na portu ${PORT}`);
 })
