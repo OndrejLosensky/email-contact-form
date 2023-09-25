@@ -54,3 +54,11 @@ app.post('/api/forma', (req, res) => {
 
     smtpTransport.close();
 })
+
+
+
+const PORT = process.env.PORT||3001;
+
+app.listen(PORT, () => {
+    console.log(`Server se nacita na portu ${PORT}`);
+})
