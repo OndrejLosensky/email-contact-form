@@ -81,7 +81,7 @@ export default class ContactForm extends Component {
                     <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[70%] h-[80%] mt-2'>
                         <h1 className="text-3xl text-blue-500 font-semibold mb-2"> Kontaktní formulář</h1>
 
-                        <form >
+                        <form onClick={this.formSubmit}>
                             <div>
                                 <label htmlFor="name" className='block text-gray-700 font-medium'> Jméno:</label>
                                 <input
@@ -106,6 +106,7 @@ export default class ContactForm extends Component {
                                     name="email"
                                     value={this.state.email}
                                     onChange={this.handleEmail}
+                                    required
                                 />
                             </div>
 
@@ -119,6 +120,10 @@ export default class ContactForm extends Component {
                                     value={this.state.message}
                                     onChange={this.handleMessage}
                                 ></textarea>
+                            </div>
+
+                            <div className={this.state.sent ? 'msg msgAppear' : 'msg'}>
+                              Zprava byla odeslana
                             </div>
 
                             <div className='text-right mt-2'>
