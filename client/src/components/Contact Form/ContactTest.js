@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 export default class ContactForm extends Component {
-  
+
+
   state = {
     email: '',
     name: '',
@@ -50,6 +51,8 @@ export default class ContactForm extends Component {
                                     type="text"
                                     id="name"
                                     name="name"
+                                    value={this.state.name}
+                                    onChange={this.handleName}
                                     
                                 />
                             </div>
