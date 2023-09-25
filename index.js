@@ -21,14 +21,14 @@ app.post('/api/forma', (req, res) => {
         service: 'Gmail', 
         port: 465,
         auth: {
-            user:'ondra.losi@gmail.com',
-            pass:'Losicek0505'
+            user:'losenskyondrej@gmail.com',
+            pass:'Losicek050517'
         }
     });
 
     let mailOptions = {
         from:data.email,
-        to: 'ondra.losi@gmail.com',
+        to: 'losenskyondrej@gmail.com',
         subject:`Zprava od ${data.name}`,
         html:`
             <h2> Informace </h2>
