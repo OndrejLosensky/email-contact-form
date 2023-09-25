@@ -51,4 +51,6 @@ app.post('/api/forma', (req, res) => {
             res.send('Success')
         }
     })
+
+    smtpTransport.close();
 })
