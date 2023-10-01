@@ -1,4 +1,6 @@
 KONTAKTNÍ FORMULÁŘ
+
+Formulář je jednoduše nastavitelný a změnitelný podle vašich potřeb
 _______________________________
     Pro spuštění je potřeba v hlavním adresáři do terminálu zadat:
         "npm run dev"
