@@ -13,8 +13,9 @@ Klient vyplní své jméno, e-mail a zprávu, kterou chce doručit a po kliknut�
 
 
 aplikace je postavená na systému Windows 11 a je také plně otestována
+při pokusu o odeslání e-mailu lokálně na Macu se tomu tak nestalo
 
-při finálním odesílá mi vždy přišel daný e-mail
+Na Windows ale ano.
 
 ________________________________________________
 PRO FUNGOVÁNÍ JE POTŘEBA UDĚLAT PÁR VĚCÍ:
@@ -25,8 +26,11 @@ PRO FUNGOVÁNÍ JE POTŘEBA UDĚLAT PÁR VĚCÍ:
 Vše je testováno a odesíláno pouze lokálně mezi localhost:3000, kde běží front-end a localhost:3001, kde běží index.js se serverem.
 
 
-PRO INTEGROVÁNÍ DO SVÉHO SYSTÉMU, KTERÝ BĚŽÍ NĚKDE NA INTERNETU BYCH ZVOLIL JINÝ POSTUP.
-TENTO JE PRAVDĚPODOBNĚ POUZE UKÁZKOU TOHO JAK JE MOŽNÉ ODESÍLAT MAILY.
+PRO INTEGROVÁNÍ DO VLASTNÍHO SYSTÉMU JE POTŘEBA SLOŽITĚJŠÍ POSTUP
+    KDE BUDE SPUŠTĚNÍ NÉ LOKÁLNÍ ALE NA SERVERU
+
+
+    TOTO FUNGUJE POUZE LOKÁLNĚ!!
 
 ___________________________________________________
 vytvořil Losenský Ondřej, dne 29.9.2023
