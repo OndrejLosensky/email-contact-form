@@ -75,17 +75,19 @@ export default class ContactForm extends Component {
     return (
     <section>
 
-   
         <div>
-            <h2 className="text-5xl text-slate-700 font-bold text-center mt-8 uppercase"> šablona pro kontaktní formulář</h2>
+          <div>
+            <h2 className="text-3xl text-slate-700 font-bold text-center mt-8 uppercase"> šablona pro kontaktní formulář</h2>
+          </div>
+              <div>
 
                 <div className='flex items-center justify-center'>
                     <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[30%] h-[80%] mt-2'>
-                        <h1 className="text-3xl text-blue-500 font-semibold mb-2 text-center"> Kontaktní formulář</h1>
+                        <h1 className="text-3xl text-blue-500 font-semibold mb-2 text-center uppercase"> Kontaktní formulář</h1>
 
                         <form onSubmit={this.formSubmit}>
                             <div>
-                                <label htmlFor="name" className='block text-gray-700 font-medium'> Jméno:</label>
+                                <label htmlFor="name" className='block text-gray-700 font-medium uppercase'> Jméno:</label>
                                 <input
                                     className="w-full border border-gray-300 rounded px-3 py-2 mb-4 hover:border-black " 
                                     placeholder="Vaše jméno"
@@ -99,7 +101,7 @@ export default class ContactForm extends Component {
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-gray-700 font-medium">E-mail:</label>
+                                <label htmlFor="email" className="block text-gray-700 font-medium uppercase">E-mail:</label>
                                 <input
                                     className="w-full border border-gray-300 rounded px-3 py-2 mb-4 hover:border-black" 
                                     placeholder="Váš e-mail"
@@ -113,7 +115,7 @@ export default class ContactForm extends Component {
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-gray-700 font-medium">Zpráva (nepovinná)</label>
+                                <label htmlFor="message" className="block text-gray-700 font-medium uppercase">Zpráva (nepovinná)</label>
                                 <textarea
                                     className="w-full h-[200px] max-h-[250px] border border-gray-300 rounded px-3 py-2 hover:border-black" 
                                     placeholder="Vaše zpráva"
@@ -127,10 +129,10 @@ export default class ContactForm extends Component {
                               {/* Potřeba vytvořit proměnnou, která zobrazí že se zpráva úspěšně odeslala*/}
                             
 
-                            <div className='text-right mt-2'>
+                            <div className='text-center mt-2'>
                                 <button 
                                     type="submit" 
-                                    className="bg-blue-500 text-white px-6 py-2 rounded-full 
+                                    className="bg-blue-500 w-full text-white px-6 py-2 rounded-lg 
                                     hover:bg-blue-600 hover:-translate-y-1 duration-300" >
                                         Odeslat
                                 </button>
@@ -138,6 +140,7 @@ export default class ContactForm extends Component {
         
                         </form>
                     </div>
+                  </div>
                 </div>
         </div>
     
