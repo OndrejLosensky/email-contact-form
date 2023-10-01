@@ -87,7 +87,7 @@ export default class ContactForm extends Component {
               <div>
 
                 <div className='flex items-center justify-start ml-16 mt-20'>
-                    <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[40%] h-[80%] mt-2'>
+                    <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[40%] h-[80%] mt-2 border-[1px] border-black'>
                         <h1 className="text-3xl text-blue-500 font-bold mb-2 text-center uppercase"> Kontaktní formulář</h1>
 
                         <form onSubmit={this.formSubmit}>
