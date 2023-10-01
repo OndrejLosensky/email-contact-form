@@ -1,4 +1,12 @@
 KONTAKTNÍ FORMULÁŘ
+_______________________________
+    Pro spuštění je potřeba v hlavním adresáři do terminálu zadat:
+        "npm run dev"
+
+    Pokud chceme jen otevřít client sekci pro změnu vzhledu tak:
+        "cd client"
+        "npm start"
+_______________________________
 
 Odesílá email na danou adresu.
 Klient vyplní své jméno, e-mail a zprávu, kterou chce doručit a po kliknutí na odeslat přijde na emai
