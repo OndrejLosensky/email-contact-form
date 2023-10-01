@@ -77,13 +77,18 @@ export default class ContactForm extends Component {
 
         <div>
           <div>
-            <h2 className="text-3xl text-slate-700 font-bold text-center mt-8 uppercase"> šablona pro kontaktní formulář</h2>
+            <h2 className="text-3xl absolute right-0 mr-32 text-slate-700 font-bold text-center mt-48 uppercase"> šablona pro kontaktní formulář</h2>
+            <p className='flex items-center text-center absolute right-0 mr-48 mt-64'> 
+              Tento kontaktní formulář je lehce upravitelný <br/>
+              Lze jednoduše nastavit šířku formuláře nebo měnit barvy
+
+            </p>          
           </div>
               <div>
 
-                <div className='flex items-center justify-center'>
-                    <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[30%] h-[80%] mt-2'>
-                        <h1 className="text-3xl text-blue-500 font-semibold mb-2 text-center uppercase"> Kontaktní formulář</h1>
+                <div className='flex items-center justify-start ml-16 mt-20'>
+                    <div className='bg-gray-100 p-6 rounded-[35px] shadow-2xl duration-300 w-[40%] h-[80%] mt-2'>
+                        <h1 className="text-3xl text-blue-500 font-bold mb-2 text-center uppercase"> Kontaktní formulář</h1>
 
                         <form onSubmit={this.formSubmit}>
                             <div>
