@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <section>       
-            <footer className="bg-gray-900 text-bodyColor p-4 mt-12" style={{borderTopLeftRadius: '35px', borderTopRightRadius: '35px'}}>
+            <footer className="bg-gray-900 text-bodyColor p-4 absolute bottom-0 w-full" style={{borderTopLeftRadius: '35px', borderTopRightRadius: '35px'}}>
                 <div className="container mx-auto flex justify-center items-center"> 
                     <div className="text-center font-semibold">
                          <CurrentYear/>
